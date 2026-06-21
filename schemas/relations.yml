@@ -1,0 +1,14 @@
+- related_to
+- contains
+- part_of
+- depends_on
+- supports
+- implements
+- calls
+- reads_from
+- writes_to
+- publishes
+- subscribes_to
+- derived_from
+- owned_by
+- governed_by
