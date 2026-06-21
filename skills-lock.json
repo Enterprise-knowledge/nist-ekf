@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "ekf-bootstrap": {
+      "source": "Enterprise-knowledge/enterprise-knowledge-format",
+      "sourceType": "github",
+      "skillPath": "skills/ekf-bootstrap/SKILL.md",
+      "computedHash": "61357325767382f753390d36d0e314c810a738d06a5e4804e4fe56686600539c"
+    }
+  }
+}
