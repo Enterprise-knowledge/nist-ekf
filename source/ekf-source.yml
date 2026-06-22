@@ -1,0 +1,20 @@
+id: nist-governance-source-corpus
+name: NIST Governance Source Corpus
+kind: document
+description: Local source PDFs for CSF 2.0, AI RMF 1.0, and SP 800-53 Rev. 5 with supplemental official NIST machine-readable
+  exports.
+owner:
+  name: Enterprise Knowledge Format Maintainers
+location: /source
+upstream:
+  uri: https://csrc.nist.gov/ and https://airc.nist.gov/
+  ref: NIST public publications and data exports
+sync:
+  mode: manual
+  last_synced: '2026-06-22T00:00:00Z'
+indexing:
+  include:
+  - '*.pdf'
+  exclude: []
+trust:
+  level: authoritative

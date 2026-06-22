@@ -1,17 +1,17 @@
 ---
 type: index
-title: "Data"
-description: "Databases, schemas, tables, lineage, and data contracts."
-status: draft
+title: Data
+description: Generated data exports and structured data artifacts used by the demo.
+status: active
 owner:
-  name: "Enterprise Knowledge Format Maintainers"
-updated: 2026-06-21T16:21:31Z
+  name: Enterprise Knowledge Format Maintainers
+updated: '2026-06-22T00:00:00Z'
 ---
 
 # Data
 
-Databases, schemas, tables, lineage, and data contracts.
+Generated data exports and structured data artifacts used by the demo.
 
 ## Core Concepts
 
-Add concepts here with short descriptions.
+Publication-specific concepts are maintained in the nested bundles listed from the root index.

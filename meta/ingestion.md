@@ -1,24 +1,12 @@
 # NIST Governance EKF Demo Ingestion
 
-Document source sync, redaction, indexing, and artifact generation workflows here.
+This bundle is generated from local PDFs in `/source/` plus official NIST machine-readable exports downloaded into `/artifacts/data/`.
 
-## Non-Markdown Source Conversion
+## Workflow
 
-Keep original non-markdown source files under `source/`. Use `markitdown` to generate markdown renderings under `artifacts/markdown/` before drafting curated concepts.
-
-When `uv` is available, prefer a local `pyproject.toml`:
-
-```sh
-uv init --bare
-uv add markitdown
-```
-
-When `uv` is unavailable, create a local virtual environment and install `markitdown` there:
-
-```sh
-python3 -m venv .venv
-. .venv/bin/activate
-python -m pip install markitdown
-```
-
-Generated markdown is an artifact, not canonical knowledge. Concepts under `knowledge/` should cite the original source path and may reference the generated markdown artifact when useful.
+1. Extract every PDF page into `/artifacts/markdown/documents/`.
+2. Download CSF Reference Tool export, AI RMF Playbook JSON, and SP 800-53 OSCAL catalog into `/artifacts/data/`.
+3. Generate curated EKF concept markdown under root `knowledge/` and publication-specific nested bundles.
+4. Validate with `.agents/skills/ekf-bootstrap/scripts/validate_ekf.py`.
+5. Parse graph JSON with `.agents/skills/ekf-bootstrap/scripts/parse_ekf_graph.py`.
+6. Fill `.agents/skills/ekf-bootstrap/assets/graph-template.html` into `/artifacts/html/knowledge-graph/index.html`.

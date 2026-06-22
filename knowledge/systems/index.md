@@ -1,17 +1,17 @@
 ---
 type: index
-title: "Systems"
-description: "Systems, platforms, services, and applications in this bundle."
-status: draft
+title: Systems
+description: Reference systems and structured source systems used by this demo.
+status: active
 owner:
-  name: "Enterprise Knowledge Format Maintainers"
-updated: 2026-06-21T16:21:31Z
+  name: Enterprise Knowledge Format Maintainers
+updated: '2026-06-22T00:00:00Z'
 ---
 
 # Systems
 
-Systems, platforms, services, and applications in this bundle.
+Reference systems and structured source systems used by this demo.
 
 ## Core Concepts
 
-Add concepts here with short descriptions.
+- [NIST Reference Library](nist-reference-library.md) - Source system for local NIST PDFs and official NIST exports.

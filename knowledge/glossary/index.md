@@ -1,17 +1,17 @@
 ---
 type: index
-title: "Glossary"
-description: "Shared terminology for this bundle."
-status: draft
+title: Glossary
+description: Shared terminology for this bundle; publication-specific terms live in nested bundles.
+status: active
 owner:
-  name: "Enterprise Knowledge Format Maintainers"
-updated: 2026-06-21T16:21:31Z
+  name: Enterprise Knowledge Format Maintainers
+updated: '2026-06-22T00:00:00Z'
 ---
 
 # Glossary
 
-Shared terminology for this bundle.
+Shared terminology for this bundle; publication-specific terms live in nested bundles.
 
 ## Core Concepts
 
-Add concepts here with short descriptions.
+Publication-specific concepts are maintained in the nested bundles listed from the root index.

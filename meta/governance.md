@@ -1,5 +1,5 @@
 # NIST Governance EKF Demo Governance
 
-Default owner: Enterprise Knowledge Format Maintainers
+Default owner: Enterprise Knowledge Format Maintainers.
 
-Document review expectations, lifecycle rules, and allowed local extensions here.
+Generated concepts are suitable for demonstration, discovery, and graph traversal. Before operational policy use, compare generated concepts against the cited NIST publication and supplemental NIST data export.

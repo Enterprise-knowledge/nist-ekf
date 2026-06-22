@@ -2,7 +2,11 @@
 
 ## Tags
 
-Use lowercase tags. Choose either kebab-case or snake_case for this bundle and keep it consistent.
+Use lowercase kebab-case tags. Preserve NIST identifiers in `nist_id` frontmatter and in titles.
+
+## Generated Concepts
+
+The generated publication bundles are produced by `scripts/generate_nist_ekf.py`. Manual edits should either update the generator or be documented in `log.md`.
 
 ## Search
 

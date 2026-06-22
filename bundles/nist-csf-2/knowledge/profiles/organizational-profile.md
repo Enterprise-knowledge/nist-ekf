@@ -1,0 +1,46 @@
+---
+type: profile
+title: CSF Organizational Profile
+description: A mechanism for describing current and target cybersecurity outcomes in an organizational context.
+status: active
+owner:
+  name: Enterprise Knowledge Format Maintainers
+updated: '2026-06-22T00:00:00Z'
+domain: cybersecurity-risk-management
+system: nist-csf-2
+tags:
+- nist
+- csf
+- profile
+confidence: high
+review:
+  status: agent-generated
+  reviewed_by: EKF generation workflow
+  reviewed_at: '2026-06-22T00:00:00Z'
+sources:
+- name: NIST CSF 2.0 PDF
+  path: /source/NIST.CSWP.29.pdf
+  kind: pdf
+  description: Local source PDF for CSF 2.0.
+- name: CSF Reference Tool export
+  path: /artifacts/data/csf-2.0-export.xlsx
+  kind: xlsx
+  description: NIST CSF Reference Tool export used for Categories, Subcategories, and Implementation Examples.
+related:
+- name: NIST CSWP 29
+  path: /bundles/nist-csf-2/knowledge/publication.md
+  relation: part_of
+  description: CSF Profiles are described by the CSF 2.0 publication.
+- name: CSF Core
+  path: /bundles/nist-csf-2/knowledge/core/csf-core.md
+  relation: uses
+  description: Profiles use CSF Core outcomes as their organizing language.
+---
+
+# Summary
+
+A mechanism for describing current and target cybersecurity outcomes in an organizational context.
+
+# Citations
+
+[1] [NIST CSF 2.0 PDF](/source/NIST.CSWP.29.pdf)

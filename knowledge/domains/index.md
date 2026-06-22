@@ -1,17 +1,17 @@
 ---
 type: index
-title: "Domains"
-description: "Business and technical domains in this bundle."
-status: draft
+title: Domains
+description: Cross-publication governance domains represented in this EKF demo.
+status: active
 owner:
-  name: "Enterprise Knowledge Format Maintainers"
-updated: 2026-06-21T16:21:31Z
+  name: Enterprise Knowledge Format Maintainers
+updated: '2026-06-22T00:00:00Z'
 ---
 
 # Domains
 
-Business and technical domains in this bundle.
+Cross-publication governance domains represented in this EKF demo.
 
 ## Core Concepts
 
-Add concepts here with short descriptions.
+- [NIST Governance Corpus](nist-governance-corpus.md) - Cross-publication domain connecting cybersecurity risk, AI risk, and security and privacy controls.
