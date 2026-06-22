@@ -33,3 +33,7 @@ To validate this EKF bundle:
 ```sh
 uv run --with pyyaml python .agents/skills/ekf-bootstrap/scripts/validate_ekf.py .
 ```
+
+## HTML Artefact
+
+After checking out this repository, open `artifacts/html/knowledge-graph/index.html` directly in your browser to inspect the generated knowledge graph artefact.
