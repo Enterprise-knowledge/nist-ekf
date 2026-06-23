@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Validate NIST EKF Demo
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Compile generation script
+        run: uv run python -m py_compile scripts/generate_nist_ekf.py
+
+      - name: Validate EKF bundle
+        run: uv run --with pyyaml python .agents/skills/ekf-bootstrap/scripts/validate_ekf.py .
+
+      - name: Parse graph
+        run: |
+          uv run --with pyyaml python .agents/skills/ekf-bootstrap/scripts/parse_ekf_graph.py . \
+            --output /tmp/nist-ekf-graph.json
+          test -s /tmp/nist-ekf-graph.json
+
+      - name: Check graph artifact exists
+        run: test -s artifacts/html/knowledge-graph/index.html
+
+      - name: Check for unresolved placeholders
+        run: |
+          ! rg -n "[T]ODO|[T]BD|[F]IXME" README.md index.md knowledge bundles meta scripts .agents/skills/ekf-bootstrap
